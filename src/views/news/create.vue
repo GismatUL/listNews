@@ -41,15 +41,6 @@ export default {
       }
     }
   },
-  methods :{
-    saveNews(){
-      axios.post('http://localhost:8000/api/createData',this.model.news)
-          .then(res => {
-            console.log(res)
-          })
-          .catch(function (error))
-    }
-  }
 }
 </script>
 
